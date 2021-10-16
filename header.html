@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CD Menu | BootstrapTema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/menu/2017/cdmenu/cdmenu.css" />
+    <link rel="stylesheet"
+        href="header.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://bootstraptema.ru/snippets/menu/2017/cdmenu/cdmenu.js"></script>
+
+
+    <!-- Меню -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2016/bootsnav/bootsnav.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://bootstraptema.ru/plugins/2016/bootsnav/bootsnav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* demo background */
+        body {
+            background: #af1335;
+            /* background: -webkit-linear-gradient(to right, #be1010, #41295a);
+            background: linear-gradient(to right, #e7122e, #75052b); */
+        }
+
+        /* demo menu */
+        nav.navbar.bootsnav {
+            border: none;
+            background: none;
+            margin-bottom: 0px;
+        }
+
+        nav.navbar.bootsnav ul.nav>li {
+            margin-right: 10px;
+        }
+
+        nav.navbar.bootsnav ul.nav>li:before {
+            content: attr(alt);
+            padding: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(1.2);
+            transition: all 0.3s ease 0s;
+        }
+
+        nav.navbar.bootsnav ul.nav>li:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        nav.navbar.bootsnav ul.nav>li>a {
+            padding: 15px;
+            margin: 0;
+            color: #D5D6E2;
+            text-transform: uppercase;
+            z-index: 1;
+            transition: all 0.5s ease 0s;
+        }
+
+        nav.navbar.bootsnav ul.nav>li.dropdown>a {
+            padding: 15px 30px 15px 15px;
+        }
+
+        nav.navbar.bootsnav ul.nav>li>a:hover,
+        nav.navbar.bootsnav ul.nav>li.on>a {
+            color: #fff;
+        }
+
+        nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after {
+            position: absolute;
+            margin: 0 0 0 0px;
+        }
+
+        nav.navbar.bootsnav ul.nav>li.dropdown>ul {
+            top: 120%;
+            transition: all 0.8s ease 0s;
+        }
+
+        nav.navbar.bootsnav ul.nav>li.dropdown.on>ul {
+            top: 100%;
+        }
+
+        .dropdown-menu.multi-dropdown {
+            position: absolute;
+            left: -100% !important;
+        }
+
+        nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+
+        @media only screen and (max-width:990px) {
+            .dropdown-menu.multi-dropdown {
+                left: 0 !important;
+            }
+
+            nav.navbar.bootsnav .navbar-toggle {
+                background: none;
+                color: #fff;
+            }
+
+            nav.navbar.bootsnav ul.nav>li {
+                margin-right: 0;
+            }
+
+            nav.navbar.bootsnav ul.nav>li:before {
+                width: 100%;
+                font-weight: normal;
+                color: #555;
+            }
+
+            nav.navbar.bootsnav ul.nav>li>a {
+                color: #333 !important;
+                border-top: none;
+            }
+
+            nav.navbar.bootsnav ul.nav>li>a:hover {
+                color: #333;
+            }
+
+            nav.navbar.bootsnav ul.nav>li.dropdown>ul {
+                top: 100%;
+            }
+        }
+    </style>
+
+    <div class="container div_menu" >
+
+        <nav class="navbar navbar-default navbar-mobile bootsnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li alt="HOME"><a href="#">Home</a></li>
+                    <li alt="ABOUT US"><a href="#">About Us</a></li>
+                    <li class="dropdown" alt="SHORTCODES">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                                        <ul class="dropdown-menu multi-dropdown">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" alt="PAGES">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                                        <ul class="dropdown-menu multi-dropdown">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                        </ul>
+                    </li>
+                    <li alt="PORTFOLIO"><a href="#">Portfolio</a></li>
+                    <li alt="CONTACT US"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div><!-- ./container -->
+
+
+    <!-- Слайдер -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <link href="https://bootstraptema.ru/snippets/slider/2016/bcts/bootstrap-touch-slider.css" rel="stylesheet"
+        media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel"
+        data-pause="hover" data-interval="false" style="top: 0px; margin: 0%;">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Third Slide -->
+            <div class="item active">
+
+                <!-- Slide Background -->
+                <img src="http://drawings-girls.ucoz.net/2016/12/lico-devushki-s-palcem-u-rta.jpg"
+                    alt="Bootstrap Touch Slider" class="slide-image" />
+                <div class="bs-slider-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- Slide Text Layer -->
+                        <div class="slide-text slide_style_left">
+                            <h1 data-animation="animated zoomInRight">It-School</h1>
+                            <p data-animation="animated fadeInLeft">Школа-лицей информационных технологий</p>
+                            <a href="#" target="_blank" class="btn btn-default"
+                                data-animation="animated fadeInLeft">select one</a>
+                            <a href="#" target="_blank" class="btn btn-primary"
+                                data-animation="animated fadeInRight">select two</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Slide -->
+
+            <!-- Second Slide -->
+            <div class="item">
+
+                <!-- Slide Background -->
+                <img src="http://drawings-girls.ucoz.net/2016/12/devushka-napravlyaushaya-vodu.jpg"
+                    alt="Bootstrap Touch Slider" class="slide-image" />
+                <div class="bs-slider-overlay"></div>
+                <!-- Slide Text Layer -->
+                <div class="slide-text slide_style_center">
+                    <h1 data-animation="animated flipInX">Bootstrap touch slider</h1>
+                    <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">select
+                        one</a>
+                    <a href="#" target="_blank" class="btn btn-primary" data-animation="animated fadeInDown">select
+                        two</a>
+                </div>
+            </div>
+            <!-- End of Slide -->
+
+            <!-- Third Slide -->
+            <div class="item">
+
+                <!-- Slide Background -->
+                <img src="http://drawings-girls.ucoz.net/2016/12/devushka-v-okrujenii-enotov.jpg"
+                    alt="Bootstrap Touch Slider" class="slide-image" />
+                <div class="bs-slider-overlay"></div>
+                <!-- Slide Text Layer -->
+                <div class="slide-text slide_style_right">
+                    <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+                    <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select
+                        one</a>
+                    <a href="#" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select
+                        two</a>
+                </div>
+            </div>
+            <!-- End of Slide -->
+
+
+        </div><!-- End of Wrapper For Slides -->
+
+        <!-- Left Control -->
+        <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- Right Control -->
+        <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div> <!-- End bootstrap-touch-slider Slider -->
+
+    <script>
+        $('#bootstrap-touch-slider').bsTouchSlider();
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
